@@ -122,7 +122,7 @@ export function Hero() {
         <img
           src="https://cdn.poehali.dev/projects/29d00986-0283-4ead-8786-5b19e074933c/bucket/cb6b6c30-73c7-4487-8bdf-5553d0286d01.jpg"
           alt="Выставочный стенд Byredo"
-          className="w-full h-full object-cover object-center"
+          className="w-full h-full object-cover object-right"
         />
       </div>
 
