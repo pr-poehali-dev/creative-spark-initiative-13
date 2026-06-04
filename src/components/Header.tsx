@@ -27,8 +27,8 @@ export function Header() {
       className={cn(
         "fixed z-50 transition-all duration-500 my-0 py-0 rounded-none",
         scrolled || mobileMenuOpen
-          ? "bg-[#2d2d2d] backdrop-blur-md py-4 top-4 left-4 right-4 rounded-2xl"
-          : "bg-transparent py-4 top-0 left-0 right-0",
+          ? "bg-white/95 backdrop-blur-md py-4 top-4 left-4 right-4 rounded-2xl shadow-sm"
+          : "bg-white/10 backdrop-blur-sm py-4 top-0 left-0 right-0",
       )}
     >
       <nav className="container mx-auto px-6 flex items-center justify-between md:px-[24]">
