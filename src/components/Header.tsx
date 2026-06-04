@@ -47,7 +47,10 @@ export function Header() {
             <li key={item.label}>
               <a
                 href={item.href}
-                className="hover:text-[rgb(251,146,60)] transition-colors duration-300 relative after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 hover:after:w-full after:bg-[rgb(251,146,60)] after:transition-all after:duration-300 text-white"
+                className={cn(
+                  "hover:text-primary transition-colors duration-300 relative after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 hover:after:w-full after:bg-primary after:transition-all after:duration-300",
+                  scrolled ? "text-foreground" : "text-white"
+                )}
               >
                 {item.label}
               </a>
@@ -68,7 +71,7 @@ export function Header() {
         </a>
 
         <button
-          className="md:hidden z-50 transition-colors duration-300 text-white"
+          className={cn("md:hidden z-50 transition-colors duration-300", scrolled ? "text-foreground" : "text-white")}
           aria-label={mobileMenuOpen ? "Закрыть меню" : "Открыть меню"}
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
         >
