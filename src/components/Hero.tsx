@@ -145,7 +145,7 @@ export function Hero() {
           >
             {"Мебель и стенды"}
             <br />
-            <span className="text-orange-200">{"ручной работы"}</span>
+            <span className="text-primary">{"ручной работы"}</span>
           </h1>
         </div>
       </div>
