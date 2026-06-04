@@ -33,7 +33,7 @@ export function Header() {
     >
       <nav className="container mx-auto px-6 flex items-center justify-between md:px-[24]">
         <a href="/" className="flex items-center gap-2 group" onClick={scrollToTop}>
-          <img src="https://cdn.poehali.dev/projects/29d00986-0283-4ead-8786-5b19e074933c/bucket/a634a393-e82c-4b12-8779-4a5102d35aa6.png" alt="Corner Makers" className="w-auto h-8" />
+          <img src="https://cdn.poehali.dev/projects/29d00986-0283-4ead-8786-5b19e074933c/bucket/a634a393-e82c-4b12-8779-4a5102d35aa6.png" alt="Corner Makers" className="w-auto h-7" />
         </a>
 
         <ul className="hidden md:flex items-center gap-10 text-sm tracking-wide">
