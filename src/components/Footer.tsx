@@ -6,7 +6,7 @@ export function Footer() {
           {/* Brand */}
           <div className="md:col-span-2">
             <a href="/" className="inline-block mb-6">
-              <img src="/images/hously-logo.svg" alt="Пространство" width={120} height={32} className="w-auto h-6" />
+              <img src="https://cdn.poehali.dev/projects/29d00986-0283-4ead-8786-5b19e074933c/bucket/1847443d-f140-47f1-9bce-4f923da1645c.png" alt="Corner Makers" className="w-auto h-7" />
             </a>
             <p className="text-muted-foreground leading-relaxed max-w-sm">
               Эксклюзивная мебель и выставочные стенды под заказ. Собственное производство — от эскиза до монтажа.
