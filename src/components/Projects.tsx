@@ -128,11 +128,11 @@ export function Projects() {
               onMouseEnter={() => setHoveredId(project.id)}
               onMouseLeave={() => setHoveredId(null)}
             >
-              <div ref={(el) => (imageRefs.current[index] = el)} className="relative overflow-hidden aspect-[4/3] mb-6">
+              <div ref={(el) => (imageRefs.current[index] = el)} className="relative overflow-hidden h-72 md:h-80 mb-6">
                 <img
                   src={project.image || "/placeholder.svg"}
                   alt={project.title}
-                  className={`w-full h-full object-cover transition-transform duration-700 ${
+                  className={`absolute inset-0 w-full h-full object-cover object-center transition-transform duration-700 ${
                     hoveredId === project.id ? "scale-105" : "scale-100"
                   }`}
                 />
