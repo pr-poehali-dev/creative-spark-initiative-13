@@ -27,11 +27,11 @@ export function Header() {
       className={cn(
         "fixed z-50 transition-all duration-500 my-0 py-0 rounded-none",
         scrolled || mobileMenuOpen
-          ? "bg-white/95 backdrop-blur-md py-4 top-4 left-4 right-4 rounded-2xl shadow-sm"
-          : "bg-white/10 backdrop-blur-sm py-4 top-0 left-0 right-0",
+          ? "bg-white/95 backdrop-blur-md py-3 md:py-4 top-2 sm:top-3 md:top-4 left-2 sm:left-3 md:left-4 right-2 sm:right-3 md:right-4 rounded-2xl shadow-sm"
+          : "bg-white/10 backdrop-blur-sm py-3 md:py-4 top-0 left-0 right-0",
       )}
     >
-      <nav className="container mx-auto px-6 flex items-center justify-between md:px-[24]">
+      <nav className="container mx-auto px-4 sm:px-6 md:px-8 flex items-center justify-between">
         <a href="/" className="flex items-center gap-2 group" onClick={scrollToTop}>
           <img src="https://cdn.poehali.dev/projects/29d00986-0283-4ead-8786-5b19e074933c/bucket/1847443d-f140-47f1-9bce-4f923da1645c.png" alt="Corner Makers" className="w-auto h-7" />
         </a>
@@ -92,7 +92,7 @@ export function Header() {
       <div
         className={cn(
           "md:hidden overflow-hidden transition-all duration-300 ease-in-out",
-          mobileMenuOpen ? "max-h-[600px] opacity-100 mt-8" : "max-h-0 opacity-0",
+          mobileMenuOpen ? "max-h-[calc(100vh-80px)] opacity-100 mt-4" : "max-h-0 opacity-0",
         )}
       >
         <div className="container mx-auto px-6">
@@ -107,7 +107,7 @@ export function Header() {
               <li key={item.label}>
                 <a
                   href={item.href}
-                  className="hover:text-[rgb(251,146,60)] transition-colors duration-300 text-white text-4xl font-light block"
+                  className="hover:text-primary transition-colors duration-300 text-foreground text-xl sm:text-2xl font-light block"
                   onClick={closeMobileMenu}
                 >
                   {item.label}

@@ -128,7 +128,7 @@ export function Hero() {
 
       <div
         ref={contentRef}
-        className="container mx-auto px-6 md:px-12 lg:pt-0 relative z-10 pb-0 pl-1 pr-1 pt-8 md:pt-0"
+        className="container mx-auto px-4 sm:px-6 md:px-12 relative z-10 pt-8 md:pt-0 pb-0"
         style={{
           willChange: "transform",
           transform: "translateY(0px)",
@@ -136,12 +136,12 @@ export function Hero() {
           transformStyle: "preserve-3d",
         }}
       >
-        <div className="mb-72 md:mb-60 lg:mb-80">
-          <p className="text-base tracking-[0.3em] uppercase text-center text-primary mb-0 font-bold">{"Производственная студия"}</p>
+        <div className="mb-32 sm:mb-48 md:mb-60 lg:mb-80">
+          <p className="text-sm sm:text-base tracking-[0.15em] sm:tracking-[0.2em] md:tracking-[0.3em] uppercase text-center text-primary mb-0 font-bold">{"Производственная студия"}</p>
 
           <h1
             ref={titleRef}
-            className="text-7xl font-medium text-balance text-center text-white mb-0 tracking-tight leading-[0.9] lg:text-8xl"
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-medium text-balance text-center text-white mb-0 tracking-tight leading-[0.9]"
           >
             {"Мебель и стенды"}
             <br />

@@ -2,7 +2,7 @@ export function Footer() {
   return (
     <footer className="py-16 md:py-24 border-t border-border">
       <div className="container mx-auto px-6 md:px-12">
-        <div className="grid md:grid-cols-4 gap-12 mb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 sm:gap-10 md:gap-12 mb-12 md:mb-16">
           {/* Brand */}
           <div className="md:col-span-2">
             <a href="/" className="inline-block mb-6">
@@ -71,7 +71,7 @@ export function Footer() {
         {/* Bottom bar */}
         <div className="pt-8 border-t border-border flex flex-col md:flex-row md:items-center justify-between gap-4 text-sm text-muted-foreground">
           <p>© 2025 Студия. Все права защищены.</p>
-          <div className="flex gap-6">
+          <div className="flex gap-3 sm:gap-6 flex-wrap">
             <a href="#" className="hover:text-foreground transition-colors">
               Политика конфиденциальности
             </a>
